@@ -1,12 +1,14 @@
+import style from "./card.module.css"
+
 export default function Card({ image, title, subtitle }) {
   return (
-    <figure className="card">
-      <div className="card__ct">
-        <img src={image} alt={title} className="card__image" />
+    <figure className={style.card}>
+      <div className={style.card__ct}>
+        <img src={image} alt={title} className={style.card__image} />
       </div>
-      <figcaption className="card__desc">
-        <h2 className="card__title">{title}</h2>
-        <h3 className="card__work">{subtitle}</h3>
+      <figcaption className={style.card__desc}>
+        <h2 className={style.card__title}>{title}</h2>
+        <h3 className={style.card__work}>{subtitle}</h3>
       </figcaption>
     </figure>
   );
