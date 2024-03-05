@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --very-dark-blue: 230 17% 14%;
+        --dark-desaturated-blue: 228 28% 20%;
+        --dark-blue: 228 26% 27%;
+        --desaturated-blue: 228 34% 66%;
+        --white: 0 0% 100%;
+        --very-pale-blue: 225 100% 98%;
+        --light-grayish-blue: 227 47% 96%;
+        --light-gray: 232 33% 91%;
+        --dark-grayish-blue: 228 12% 44%;
+
+        /* sementics Tokens */
+        --background: var(--very-dark-blue);
+        --forground: var(--white);
+        --top-background-pattern: var(--very-dark-blue);
+        --card-background: var(--dark-desaturated-blue);
+        --card-hover-background: var(--dark-blue);
+        --text: var(--desaturated-blue);
+    }
+
+    /* Light Theme */
+    .light {
+        --background: var(--white);
+        --forground: var(--very-dark-blue);
+        --top-background-pattern: var(--very-dark-blue);
+        --card-background: var(--light-grayish-blue);
+        --card-hover-background: var(--light-gray);
+        --text: var(--dark-grayish-blue);
+    }
+}
