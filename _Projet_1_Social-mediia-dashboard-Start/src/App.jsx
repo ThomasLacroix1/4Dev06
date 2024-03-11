@@ -4,7 +4,7 @@ import SocialMedia from './components/SocialMedia'
 
 function App() {
 
-  data={
+  let data = {
     title: "Social Media Dashboard",
     text: "Total Followers: 23,004",
     cards1: [
@@ -103,7 +103,7 @@ function App() {
   }
 
   return (
-    <SocialMedia data></SocialMedia>
+    <SocialMedia {data}></SocialMedia>
   )
 }
 
