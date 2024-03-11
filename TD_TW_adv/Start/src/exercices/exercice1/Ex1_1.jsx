@@ -12,7 +12,7 @@ function Button({ children, ...restProps }) {
 export default function Ex1() {
   return (
     <div className="grid h-screen place-content-center">
-      <Button>Click</Button>
+      <Button className="bg-red-500">Click</Button>
     </div>
   );
 }

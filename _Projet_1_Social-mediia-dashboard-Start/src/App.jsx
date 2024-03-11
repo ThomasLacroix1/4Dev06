@@ -103,7 +103,7 @@ function App() {
   }
 
   return (
-    <SocialMedia {data}></SocialMedia>
+    <SocialMedia ></SocialMedia>
   )
 }
 
